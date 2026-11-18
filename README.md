@@ -9,7 +9,7 @@ same budget is the non-bio-inspired reference. Before the SVR experiment, the Cu
 checked on four standard test functions (Sphere, Rastrigin, Rosenbrock, Ackley).
 
 **Team:** Abhijith M Reddy (1BM23CD003), Aniketh S Nadig (1BM23CD006), Mayur M (1BM23CD037),
-S Sanjay (1BM23CD053), Tanush V Gowda (1BM23CD064). **Guide:** Prof. Manoj Kumar.
+S Sanjay (1BM23CD053), Tanush V Gowda (1BM23CD064). **Guide:** Prof. Manoj Kumar S.
 
 ## Results (held-out test set)
 | Model | RMSE | MAE | R² |

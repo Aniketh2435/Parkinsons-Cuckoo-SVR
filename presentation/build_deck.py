@@ -99,7 +99,7 @@ proto = nps[2]
 for p in nps:
     nb.remove(p)
 for ln in ["Abhijith M Reddy (1BM23CD003)", "Aniketh S Nadig (1BM23CD006)", "Mayur M (1BM23CD037)",
-           "S Sanjay (1BM23CD053)", "Tanush V Gowda (1BM23CD064)", "", "Prof. Manoj Kumar",
+           "S Sanjay (1BM23CD053)", "Tanush V Gowda (1BM23CD064)", "", "Prof. Manoj Kumar S",
            "Assistant Professor", "Department of CSE(Data Science)", "BMSCE, Bengaluru"]:
     nb.append(_with_text(proto, ln, 30))
 
