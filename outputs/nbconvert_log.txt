@@ -1,0 +1,6 @@
+[NbConvertApp] Converting notebook Parkinsons_Cuckoo_SVR.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 1312875 bytes to Parkinsons_Cuckoo_SVR.ipynb
+[NbConvertApp] Converting notebook Parkinsons_Cuckoo_SVR.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 10 image(s).
+[NbConvertApp] Writing 1674328 bytes to Parkinsons_Cuckoo_SVR.html

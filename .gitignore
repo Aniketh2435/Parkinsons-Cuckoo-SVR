@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.lof
+report/*.lot
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/build.log
+report/main.pdf
+# unrelated earlier topic attempts (not part of this project)
+archive/wind_power/
+archive/candidates_power_plant/

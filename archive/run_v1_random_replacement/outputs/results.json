@@ -1,0 +1,204 @@
+{
+  "run_finished": "2026-11-05 17:42:56",
+  "config": {
+    "data": "data/parkinsons_updrs.data",
+    "split_seed": 42,
+    "main_seed": 42,
+    "nests": 10,
+    "generations": 8,
+    "pa": 0.25,
+    "alpha": 1.0,
+    "beta": 1.5,
+    "cv_folds": 3,
+    "robustness_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "preprocessing": {
+    "rows_raw": 5875,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "rows_clean": 5875,
+    "patients": 42,
+    "features": 18,
+    "log_transformed": [
+      "Jitter(%)",
+      "Jitter(Abs)",
+      "Jitter:RAP",
+      "Jitter:PPQ5",
+      "Jitter:DDP",
+      "Shimmer",
+      "Shimmer(dB)",
+      "Shimmer:APQ3",
+      "Shimmer:APQ5",
+      "Shimmer:APQ11",
+      "Shimmer:DDA",
+      "NHR"
+    ],
+    "train": 4700,
+    "test": 1175,
+    "target_mean": 21.29622854468085,
+    "target_std": 8.12858964086556,
+    "target_range": [
+      5.0377,
+      39.511
+    ]
+  },
+  "cuckoo_evaluations": 170,
+  "default_params": {
+    "C": 1.0,
+    "gamma": "scale",
+    "epsilon": 0.1
+  },
+  "cuckoo": {
+    "params": {
+      "C": 25.299512818946987,
+      "gamma": 0.2865188065118307,
+      "epsilon": 0.1760959886892351
+    },
+    "features": [
+      "age",
+      "sex",
+      "Jitter(Abs)",
+      "Shimmer",
+      "Shimmer(dB)",
+      "Shimmer:APQ3",
+      "Shimmer:APQ5",
+      "Shimmer:DDA",
+      "NHR",
+      "RPDE",
+      "DFA"
+    ],
+    "cv_rmse": 5.025349806872629
+  },
+  "random_search": {
+    "params": {
+      "C": 0.6919194479660367,
+      "gamma": 1.8658606484368112,
+      "epsilon": 0.0019690168039360736
+    },
+    "features": [
+      "age",
+      "sex",
+      "Jitter:PPQ5",
+      "Shimmer",
+      "Shimmer:APQ3",
+      "Shimmer:APQ11",
+      "HNR",
+      "DFA"
+    ],
+    "cv_rmse": 4.780321869565764
+  },
+  "test_metrics": {
+    "Mean predictor": {
+      "RMSE": 7.991392545141471,
+      "MAE": 6.877785154422816,
+      "R2": -0.0005190245234876212,
+      "MAPE_%": 43.11740943161892
+    },
+    "Linear Regression": {
+      "RMSE": 7.4674848201856685,
+      "MAE": 6.32670627313945,
+      "R2": 0.12636682062911664,
+      "MAPE_%": 38.37497928920695
+    },
+    "Default SVR": {
+      "RMSE": 5.672394958576315,
+      "MAE": 4.41140674624319,
+      "R2": 0.4959038884775575,
+      "MAPE_%": 26.516865789361717
+    },
+    "Random Search SVR": {
+      "RMSE": 4.693432679007201,
+      "MAE": 3.2969801317803755,
+      "R2": 0.654886769975519,
+      "MAPE_%": 19.510209339291002
+    },
+    "Cuckoo-SVR": {
+      "RMSE": 4.702082033611441,
+      "MAE": 3.3699283197559673,
+      "R2": 0.6536136049430089,
+      "MAPE_%": 20.12935981832792
+    }
+  },
+  "improvement_over_default_%": {
+    "RMSE": 17.10587735957667,
+    "MAE": 23.608759889895875,
+    "R2": 31.80247627209091,
+    "MAPE_%": 24.08846513676739
+  },
+  "improvement_over_random_search_%": {
+    "RMSE": -0.18428632507985662,
+    "MAE": -2.212575904611218,
+    "R2": -0.19440994854082397,
+    "MAPE_%": -3.173469173342134
+  },
+  "cuckoo_history_best": [
+    5.963373057419822,
+    5.963373057419822,
+    5.905369236825085,
+    5.149145855986041,
+    5.149145855986041,
+    5.149145855986041,
+    5.02892945474008,
+    5.02892945474008,
+    5.025349806872629
+  ],
+  "cuckoo_history_mean": [
+    7.053771484833533,
+    6.785007264510229,
+    6.506179122061336,
+    6.07804372456948,
+    5.831933648498121,
+    5.6956834204561275,
+    5.4159297332029785,
+    5.1607184976048455,
+    5.128733489393111
+  ],
+  "robustness": {
+    "summary": {
+      "mean test RMSE": {
+        "Cuckoo Search": 4.5353822514586675,
+        "Random Search": 4.665460450245044
+      },
+      "std": {
+        "Cuckoo Search": 0.2101588624199247,
+        "Random Search": 0.20845053949032274
+      },
+      "best": {
+        "Cuckoo Search": 4.368380737055886,
+        "Random Search": 4.369799275174618
+      },
+      "worst": {
+        "Cuckoo Search": 5.08242573702911,
+        "Random Search": 4.99858712507305
+      },
+      "runs beating default SVR": {
+        "Cuckoo Search": "10/10",
+        "Random Search": "10/10"
+      },
+      "mean improvement over default %": {
+        "Cuckoo Search": 20.04466747151578,
+        "Random Search": 17.75148796380702
+      }
+    },
+    "cuckoo_wins": 7,
+    "wilcoxon_p_vs_random": 0.1162109375,
+    "wilcoxon_p_vs_default": 0.0009765625
+  },
+  "timings_s": {
+    "cuckoo_search_s": 183.31014776229858,
+    "random_search_s": 228.60845685005188,
+    "robustness_s": 3753.2105309963226,
+    "total_s": 4168.519525051117
+  }
+}
